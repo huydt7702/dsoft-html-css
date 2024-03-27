@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSoft HTML CSS: Template 3</title>
-    <link rel="icon" type="image/x-icon" href="./public/dsoft-logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,10 +18,54 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css" />
     <link rel="stylesheet" href="./build/app.css" />
   </head>
   <body>
-    <h1>Hello anh em DSoft</h1>
+    <main class="app">
+      <header class="header">
+        <nav class="header__nav">
+          <a href="#" class="header__logo-link">
+            <img class="header__logo" src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <button class="header__categories">
+            <i class="ti-list"></i>
+            Categories
+          </button>
+          <div class="header__search">
+            <input class="header__search-input" type="text" placeholder="What do you want learn ?" />
+            <button class="header__search-icon">
+              <i class="ti-search"></i>
+            </button>
+          </div>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              Home
+              <i class="ti-angle-down"></i>
+            </li>
+            <li class="header__nav-item">
+              Pages
+              <i class="ti-angle-down"></i>
+            </li>
+            <li class="header__nav-item">
+              Courses
+              <i class="ti-angle-down"></i>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Login</a>
+            </li>
+          </ul>
+          <button class="header__register-btn">Register</button>
+        </nav>
+        <div class="header__group">
+          <h2 class="header__heading">Distant learning for further expansion</h2>
+          <p class="header__desc">
+            Choose from over 100.000 online video courses with new additions published every mont.
+          </p>
+          <button class="header__get-started-btn">Get Started Now for Free</button>
+        </div>
+      </header>
+    </main>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

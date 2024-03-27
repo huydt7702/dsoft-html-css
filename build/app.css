@@ -12,4 +12,119 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  background: url("../../../assets/images/slider1.png") no-repeat top/cover;
+  height: 460px;
+  color: #fff;
+}
+.header__logo {
+  width: 120px;
+  margin-right: 30px;
+}
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header__categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin-right: 14px;
+}
+.header__search {
+  position: relative;
+}
+.header__search-input {
+  padding: 12px 8px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+.header__search-input::placeholder {
+  color: #fff;
+}
+.header__search-icon {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.header__register-btn, .header__get-started-btn {
+  background-color: #f46962;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px;
+}
+.header__register-btn:hover, .header__get-started-btn:hover {
+  opacity: 0.9;
+  transition: opacity ease-in-out 0.2s;
+}
+.header__group {
+  text-align: center;
+}
+.header__heading {
+  font-size: 3.6rem;
+  margin: 34px 0;
+}
+.header__desc {
+  margin: 16px 0;
+  font-size: 1.5rem;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+.header__nav-list {
+  display: flex;
+  gap: 28px;
+  margin: 0 20px 0 40px;
+}
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.header__nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=app.css.map */
