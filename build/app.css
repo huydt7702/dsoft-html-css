@@ -1,0 +1,15 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #050505;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=app.css.map */
