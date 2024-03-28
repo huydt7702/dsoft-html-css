@@ -335,6 +335,52 @@ button {
   margin-bottom: 0;
   color: #f68c2b;
 }
+.courses__wrap-progress {
+  display: flex;
+  align-items: center;
+}
+.courses__progress-btn {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+}
+.courses__progress-btn:hover {
+  opacity: 0.7;
+  transition: opacity ease-in-out 0.2s;
+}
+.courses__arrow-left {
+  color: #2f3d62;
+}
+.courses__progress {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 8px;
+  border-radius: 10px;
+}
+.courses__progress::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 33.33333%;
+  background-color: #fd8a00;
+  border-radius: 10px;
+}
+.courses__arrow-right {
+  color: #fd8a00;
+}
+
+.course--bg-gray {
+  background-color: #f0eef7;
+  padding-bottom: 56px;
+}
 
 .feedback {
   background-color: #33333d;
@@ -415,6 +461,84 @@ button {
 }
 .feedback__author {
   margin-bottom: 0;
+}
+
+.online-coaching {
+  position: relative;
+  background-color: #fdf0ef;
+  padding: 126px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.online-coaching__heading {
+  font-size: 2.4rem;
+}
+.online-coaching__intro {
+  color: #2f3d62;
+  margin: 20px 0;
+}
+.online-coaching__btn {
+  background-color: #f46962;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 12px 14px;
+}
+.online-coaching__btn:hover {
+  opacity: 0.8;
+  transition: opacity ease-in-out 0.2s;
+}
+.online-coaching__avatar {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.online-coaching__avatar--avatar1 {
+  left: 340px;
+  top: 60px;
+}
+.online-coaching__avatar--avatar2 {
+  left: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.online-coaching__avatar--avatar3 {
+  bottom: 50px;
+  left: 374px;
+}
+.online-coaching__avatar--avatar4 {
+  right: 340px;
+  top: 60px;
+}
+.online-coaching__avatar--avatar5 {
+  right: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.online-coaching__avatar--avatar6 {
+  bottom: 50px;
+  right: 374px;
+}
+.online-coaching__circle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 8px solid #f46962;
+}
+.online-coaching__circle--circle1 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 300px;
+}
+.online-coaching__circle--circle2 {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 300px;
 }
 
 /*# sourceMappingURL=app.css.map */
