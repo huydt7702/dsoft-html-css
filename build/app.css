@@ -32,6 +32,7 @@ button {
 }
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -62,7 +63,7 @@ button {
   position: relative;
 }
 .header__search-input {
-  padding: 12px 8px;
+  padding: 12px 30px 12px 8px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.4);
   color: #fff;
@@ -110,6 +111,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 32px 0;
+  width: 100%;
 }
 .header__nav-list {
   display: flex;
@@ -125,6 +127,115 @@ button {
 .header__nav-item a {
   color: #fff;
   text-decoration: none;
+}
+
+.header__info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #fff;
+  color: #2f3d62;
+  border-radius: 2px;
+  padding: 16px 22px;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.2);
+}
+.header__info-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  border: 1px solid #2f3d62;
+  color: #fff;
+}
+.header__info-icon--active {
+  border: 1px solid #f46962;
+}
+.header__info-icon i {
+  background-color: #2f3d62;
+  border-radius: 100%;
+  padding: 8px;
+}
+.header__info-icon--active i {
+  background-color: #f46962;
+}
+
+.content {
+  margin-top: 90px;
+}
+.content__title-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 0;
+}
+.content__title {
+  color: #2f3d62;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+.content__title-group-btn {
+  background-color: #f46962;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 14px;
+}
+.content__title-group-btn:hover {
+  opacity: 0.8;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.categories {
+  background-color: #f0eef7;
+  padding-bottom: 36px;
+}
+.categories__item {
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.categories__img {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.categories__title {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #2f3d62;
+  font-weight: 500;
+}
+
+.courses__wrap-btn {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.courses__dropdown-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #523874;
+  padding: 4px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

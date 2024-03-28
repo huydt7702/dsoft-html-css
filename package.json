@@ -1,0 +1,11 @@
+{
+  "name": "dsoft-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass assets/scss/app.scss build/app.css --watch"
+  },
+  "author": "huydt7702",
+  "license": "ISC"
+}

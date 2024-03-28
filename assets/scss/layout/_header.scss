@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -33,7 +34,7 @@
   }
 
   &__search-input {
-    padding: 12px 8px;
+    padding: 12px 30px 12px 8px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.4);
     color: $whiteColor;
@@ -91,6 +92,7 @@
   align-items: center;
   justify-content: center;
   padding: 32px 0;
+  width: 100%;
 
   &-list {
     display: flex;
@@ -108,5 +110,51 @@
   &-item a {
     color: $whiteColor;
     text-decoration: none;
+  }
+}
+
+.header__info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: $whiteColor;
+  color: #2f3d62;
+  border-radius: 2px;
+  padding: 16px 22px;
+  box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.2);
+
+  &-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    border: 1px solid #2f3d62;
+    color: $whiteColor;
+  }
+
+  &-icon--active {
+    border: 1px solid $buttonPrimaryColor;
+  }
+
+  &-icon i {
+    background-color: #2f3d62;
+    border-radius: 100%;
+    padding: 8px;
+  }
+
+  &-icon--active i {
+    background-color: $buttonPrimaryColor;
   }
 }
