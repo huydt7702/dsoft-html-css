@@ -60,6 +60,8 @@
 }
 
 .courses {
+  padding-bottom: 16px;
+
   &__wrap-btn {
     display: flex;
     align-items: center;
@@ -186,5 +188,101 @@
     font-weight: 600;
     margin-bottom: 0;
     color: #f68c2b;
+  }
+}
+
+.feedback {
+  background-color: #33333d;
+  padding-bottom: 46px;
+
+  .content__title {
+    color: $whiteColor;
+  }
+
+  &__group-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__arrow-left,
+  &__arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $whiteColor;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: 0.9;
+      transition: opacity ease-in-out 0.2s;
+    }
+  }
+
+  &__arrow-left {
+    color: #2f3d62;
+  }
+
+  &__arrow-right {
+    color: #fd8a00;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__video {
+    position: relative;
+  }
+
+  &__video-thumbnail {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  &__play-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $whiteColor;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+
+  &__play-icon {
+    position: relative;
+    left: 2px;
+    color: $buttonPrimaryColor;
+    font-size: 2.4rem;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $whiteColor;
+  }
+
+  &__detail {
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  &__author {
+    margin-bottom: 0;
   }
 }

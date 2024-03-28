@@ -227,6 +227,9 @@ button {
   font-weight: 500;
 }
 
+.courses {
+  padding-bottom: 16px;
+}
 .courses__wrap-btn {
   display: flex;
   align-items: center;
@@ -331,6 +334,87 @@ button {
   font-weight: 600;
   margin-bottom: 0;
   color: #f68c2b;
+}
+
+.feedback {
+  background-color: #33333d;
+  padding-bottom: 46px;
+}
+.feedback .content__title {
+  color: #fff;
+}
+.feedback__group-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.feedback__arrow-left, .feedback__arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+}
+.feedback__arrow-left:hover, .feedback__arrow-right:hover {
+  opacity: 0.9;
+  transition: opacity ease-in-out 0.2s;
+}
+.feedback__arrow-left {
+  color: #2f3d62;
+}
+.feedback__arrow-right {
+  color: #fd8a00;
+}
+.feedback__content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.feedback__video {
+  position: relative;
+}
+.feedback__video-thumbnail {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.feedback__play-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.feedback__play-icon {
+  position: relative;
+  left: 2px;
+  color: #f46962;
+  font-size: 2.4rem;
+}
+.feedback__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+.feedback__detail {
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.feedback__author {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
