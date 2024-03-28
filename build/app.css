@@ -541,4 +541,50 @@ button {
   right: 300px;
 }
 
+.footer {
+  background-color: #282834;
+  padding-top: 66px;
+  color: #fff;
+}
+.footer__col {
+  margin-bottom: 30px;
+}
+.footer__heading {
+  margin-bottom: 28px;
+}
+.footer__item {
+  padding: 8px 0;
+}
+.footer__item a {
+  color: #ccc;
+}
+.footer__license {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #444;
+  padding: 18px 0;
+}
+.footer__license-title {
+  margin-bottom: 0;
+  color: #ccc;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 1.8rem;
+}
+.footer__social-item a {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+}
+
 /*# sourceMappingURL=app.css.map */
