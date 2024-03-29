@@ -30,6 +30,9 @@ input {
 button {
   cursor: pointer;
 }
+button:focus {
+  outline: none;
+}
 
 .header {
   position: relative;
@@ -507,6 +510,71 @@ button {
 }
 .feedback__author {
   margin-bottom: 0;
+}
+
+.platform__content {
+  display: flex;
+  gap: 240px;
+  align-items: center;
+}
+.platform__left {
+  width: 40%;
+}
+.platform__list {
+  list-style-type: decimal-leading-zero;
+  padding-left: 30px;
+}
+.platform__item::marker {
+  font-size: 2rem;
+}
+.platform__item-heading {
+  color: #333;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.platform__item-desc {
+  margin: 20px 80px 40px 20px;
+  text-align: justify;
+}
+.platform__right {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background-color: #f3adab;
+}
+.platform__img-wrap {
+  position: absolute;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.platform__img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.platform__img-platform1 {
+  right: 54%;
+  bottom: 50%;
+}
+.platform__skeleton {
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  margin-top: 12px;
+}
+.platform__img-platform2 {
+  left: 54%;
+  bottom: 50%;
+}
+.platform__img-certificate {
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .online-coaching {
