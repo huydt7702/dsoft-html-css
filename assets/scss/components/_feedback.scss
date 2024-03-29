@@ -47,14 +47,15 @@
     position: relative;
   }
 
-  &__video-thumbnail {
+  &__video-play {
     width: 300px;
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
   }
 
-  &__play-btn {
+  &__play-btn,
+  &__pause-btn {
     position: absolute;
     display: flex;
     align-items: center;
@@ -67,13 +68,26 @@
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    transition: opacity ease-in-out 0.2s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__pause-btn {
+    display: none;
+  }
+
+  &__pause-icon,
+  &__play-icon {
+    position: relative;
+    color: $buttonPrimaryColor;
+    font-size: 2.4rem;
   }
 
   &__play-icon {
-    position: relative;
     left: 2px;
-    color: $buttonPrimaryColor;
-    font-size: 2.4rem;
   }
 
   &__desc {
@@ -87,6 +101,8 @@
     font-size: 2.4rem;
     font-style: italic;
     margin-bottom: 20px;
+    margin-right: 140px;
+    text-align: justify;
   }
 
   &__author {

@@ -1,0 +1,169 @@
+@media (max-width: 991.98px) {
+  .header {
+    &__nav-list {
+      display: none;
+    }
+
+    &__bars-btn {
+      display: flex;
+    }
+  }
+
+  .feedback {
+    &__detail {
+      margin-right: 0;
+    }
+  }
+
+  .platform {
+    padding-bottom: 80px;
+
+    &__left {
+      width: 100%;
+    }
+
+    &__right {
+      margin: 0 auto;
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 90px;
+    }
+
+    &__item-desc {
+      margin: 20px 20px 40px 20px;
+    }
+  }
+
+  .online-coaching {
+    &__avatar {
+      display: none;
+    }
+
+    &__circle {
+      display: none;
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 767.98px) {
+  .header {
+    &__info {
+      display: none;
+    }
+
+    &__categories {
+      display: none;
+    }
+  }
+
+  .feedback {
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__video-play {
+      width: 100%;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 575.98px) {
+  .sub-header {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: unset;
+    background-color: $whiteColor;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    z-index: 80;
+    height: fit-content;
+
+    &__group {
+      display: none;
+    }
+
+    &__search {
+      border: 1px solid #ccc;
+      background-color: transparent;
+      border-radius: 3px;
+      box-shadow: inset 0 1px 2px #eee;
+    }
+
+    &__search-input {
+      color: #333;
+      padding: 11px 30px 11px 8px;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+
+    &__search-icon {
+      color: #333;
+    }
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 0;
+    margin-top: 114px;
+
+    &__title {
+      font-size: 2rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      max-height: 28.8px;
+      overflow: hidden;
+    }
+  }
+
+  .courses {
+    &__dropdown-group {
+      display: none;
+    }
+  }
+
+  .feedback {
+    &__detail {
+      font-size: 2rem;
+    }
+  }
+
+  .platform {
+    &__right {
+      height: 220px;
+      width: 220px;
+    }
+
+    &__img {
+      width: 124px;
+      height: 92px;
+    }
+  }
+
+  .footer {
+    &__col {
+      text-align: center;
+    }
+
+    &__license {
+      flex-direction: column;
+    }
+  }
+}

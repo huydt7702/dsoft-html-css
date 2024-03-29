@@ -29,40 +29,89 @@
   </head>
   <body>
     <main class="app">
+      <header class="header sub-header js-sub-header">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="#" class="header__logo-link">
+              <img class="header__logo" src="./assets/images/logo.png" alt="Logo" />
+            </a>
+            <div class="header__group-search">
+              <button class="header__categories">
+                <i class="ti-list"></i>
+                Categories
+              </button>
+              <div class="header__search">
+                <input class="header__search-input" type="text" placeholder="What do you want learn ?" />
+                <button class="header__search-icon">
+                  <i class="ti-search"></i>
+                </button>
+              </div>
+            </div>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                Home
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                Pages
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                Courses
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Login</a>
+              </li>
+            </ul>
+            <div class="header__group-btn">
+              <button class="header__register-btn">Register</button>
+              <button class="header__bars-btn js-sidebar-bars-btn"><i class="ti-menu"></i></button>
+            </div>
+          </nav>
+        </div>
+      </header>
       <header class="header">
-        <nav class="header__nav">
-          <a href="#" class="header__logo-link">
-            <img class="header__logo" src="./assets/images/logo.png" alt="Logo" />
-          </a>
-          <button class="header__categories">
-            <i class="ti-list"></i>
-            Categories
-          </button>
-          <div class="header__search">
-            <input class="header__search-input" type="text" placeholder="What do you want learn ?" />
-            <button class="header__search-icon">
-              <i class="ti-search"></i>
-            </button>
-          </div>
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              Home
-              <i class="ti-angle-down"></i>
-            </li>
-            <li class="header__nav-item">
-              Pages
-              <i class="ti-angle-down"></i>
-            </li>
-            <li class="header__nav-item">
-              Courses
-              <i class="ti-angle-down"></i>
-            </li>
-            <li class="header__nav-item">
-              <a href="#">Login</a>
-            </li>
-          </ul>
-          <button class="header__register-btn">Register</button>
-        </nav>
+        <div class="container">
+          <nav class="header__nav">
+            <a href="#" class="header__logo-link">
+              <img class="header__logo" src="./assets/images/logo.png" alt="Logo" />
+            </a>
+            <div class="header__group-search">
+              <button class="header__categories">
+                <i class="ti-list"></i>
+                Categories
+              </button>
+              <div class="header__search">
+                <input class="header__search-input" type="text" placeholder="What do you want learn ?" />
+                <button class="header__search-icon">
+                  <i class="ti-search"></i>
+                </button>
+              </div>
+            </div>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                Home
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                Pages
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                Courses
+                <i class="ti-angle-down"></i>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Login</a>
+              </li>
+            </ul>
+            <div class="header__group-btn">
+              <button class="header__register-btn">Register</button>
+              <button class="header__bars-btn js-sidebar-bars-btn"><i class="ti-menu"></i></button>
+            </div>
+          </nav>
+        </div>
         <div class="header__group">
           <h2 class="header__heading">Distant learning for further expansion</h2>
           <p class="header__desc">
@@ -91,6 +140,20 @@
           </div>
         </div>
       </header>
+      <aside class="sidebar js-sidebar">
+        <div class="sidebar__header">
+          <a href="#" class="sidebar__logo-link">
+            <img class="sidebar__logo" src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <button class="sidebar__close-btn js-sidebar-close-btn"><i class="ti-close"></i></button>
+        </div>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">Home</li>
+          <li class="sidebar__item">Pages</li>
+          <li class="sidebar__item">Courses</li>
+          <li class="sidebar__item">Login</li>
+        </ul>
+      </aside>
       <section class="content">
         <div class="categories">
           <div class="container">
@@ -385,9 +448,12 @@
             </div>
             <div class="feedback__content">
               <div class="feedback__video">
-                <img class="feedback__video-thumbnail" src="./assets/images/video-thumbnail.jpg" alt="Video" />
-                <button class="feedback__play-btn">
+                <video class="feedback__video-play js-feedback-video" src="./assets/videos/videomtp.mp4"></video>
+                <button class="feedback__play-btn js-feedback-play-video-btn">
                   <i class="ti-control-play feedback__play-icon"></i>
+                </button>
+                <button class="feedback__pause-btn js-feedback-pause-video-btn">
+                  <i class="ti-control-pause feedback__pause-icon"></i>
                 </button>
               </div>
               <div class="feedback__desc">
@@ -617,7 +683,7 @@
       <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer__col">
                 <h3 class="footer__heading">Company</h3>
                 <ul class="footer__list">
@@ -629,7 +695,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer__col">
                 <h3 class="footer__heading">Community</h3>
                 <ul class="footer__list">
@@ -642,7 +708,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer__col">
                 <h3 class="footer__heading">Teaching</h3>
                 <ul class="footer__list">
@@ -655,7 +721,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer__col">
                 <h3 class="footer__heading">Support</h3>
                 <ul class="footer__list">
@@ -688,6 +754,7 @@
           </div>
         </div>
       </footer>
+      <div class="overlay js-overlay"></div>
     </main>
     <script src="./assets/js/script.js"></script>
     <script
