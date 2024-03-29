@@ -59,6 +59,11 @@
       display: none;
     }
   }
+  .courses {
+    &__img {
+      height: 320px;
+    }
+  }
 
   .feedback {
     &__content {
@@ -130,6 +135,12 @@
       -webkit-line-clamp: 1;
       max-height: 28.8px;
       overflow: hidden;
+    }
+  }
+
+  .categories {
+    &__img {
+      height: 320px;
     }
   }
 

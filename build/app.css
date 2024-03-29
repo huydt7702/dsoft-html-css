@@ -856,6 +856,9 @@ button:focus {
   .header__categories {
     display: none;
   }
+  .courses__img {
+    height: 320px;
+  }
   .feedback__content {
     flex-direction: column;
     gap: 20px;
@@ -913,6 +916,9 @@ button:focus {
     -webkit-line-clamp: 1;
     max-height: 28.8px;
     overflow: hidden;
+  }
+  .categories__img {
+    height: 320px;
   }
   .courses__dropdown-group {
     display: none;
