@@ -104,6 +104,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
   }
 
   &__footer-user {
@@ -124,6 +125,10 @@
 
   &__footer-name {
     margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
   }
 
   &__footer-price {

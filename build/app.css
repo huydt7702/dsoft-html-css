@@ -523,6 +523,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .courses__footer-user {
   display: flex;
@@ -540,6 +541,10 @@ button:focus {
 }
 .courses__footer-name {
   margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 .courses__footer-price {
   display: flex;
@@ -941,6 +946,9 @@ button:focus {
   }
   .header__search-icon {
     color: #333;
+  }
+  .header__register-btn {
+    display: none;
   }
   .sidebar {
     width: 100%;
