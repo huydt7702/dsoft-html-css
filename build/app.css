@@ -574,14 +574,12 @@ button:focus {
   margin: 0 8px;
   border-radius: 10px;
 }
-.courses__progress::after {
-  content: "";
-  display: block;
+.courses__progress-item {
   position: absolute;
   height: 4px;
-  width: 33.33333%;
   background-color: #fd8a00;
   border-radius: 10px;
+  transition: width ease-in-out 0.5s;
 }
 .courses__arrow-right {
   color: #fd8a00;
@@ -834,6 +832,9 @@ button:focus {
   }
   .header__bars-btn {
     display: flex;
+  }
+  .courses__wrap-progress {
+    display: none;
   }
   .feedback__detail {
     margin-right: 0;

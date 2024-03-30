@@ -168,14 +168,12 @@
     margin: 0 8px;
     border-radius: 10px;
 
-    &::after {
-      content: '';
-      display: block;
+    &-item {
       position: absolute;
       height: 4px;
-      width: 33.33333%;
       background-color: #fd8a00;
       border-radius: 10px;
+      transition: width ease-in-out 0.5s;
     }
   }
 

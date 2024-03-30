@@ -9,6 +9,12 @@
     }
   }
 
+  .courses {
+    &__wrap-progress {
+      display: none;
+    }
+  }
+
   .feedback {
     &__detail {
       margin-right: 0;
