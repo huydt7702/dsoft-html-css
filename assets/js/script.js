@@ -11,6 +11,7 @@ const sidebarContainer = $('.js-sidebar');
 const overlayContainer = $('.js-overlay');
 const subHeaderContainer = $('.js-sub-header');
 const progressContainer = $('.js-progress');
+const slideRowContainer = $('.js-slide-row');
 
 const bodyElement = $('body');
 const feedbackVideo = $('.js-feedback-video');
@@ -75,14 +76,17 @@ function initApp() {
     }
   }
 
-  function handleProgress(direction) {
+  function handleSlideProgress(direction) {
     let currentWidth = +progressContainer.style.width.replace('%', '');
     if (direction === NEXT_PROGRESS) {
       if (currentWidth > 99) return;
       currentWidth += ONE_THIRD;
     } else if (direction === PREV_PROGRESS) {
+      if (currentWidth < 66) return;
       currentWidth -= ONE_THIRD;
     }
+
+    slideRowContainer.style.transform = `translateX(-${currentWidth}%)`;
     progressContainer.style.width = currentWidth + '%';
   }
 
@@ -96,8 +100,8 @@ function initApp() {
   feedbackPlayVideoBtn.addEventListener('click', handlePlayFeedbackVideo);
   feedbackPauseVideoBtn.addEventListener('click', handlePauseFeedbackVideo);
 
-  nextProgressBtn.addEventListener('click', () => handleProgress(NEXT_PROGRESS));
-  prevProgressBtn.addEventListener('click', () => handleProgress(PREV_PROGRESS));
+  nextProgressBtn.addEventListener('click', () => handleSlideProgress(NEXT_PROGRESS));
+  prevProgressBtn.addEventListener('click', () => handleSlideProgress(PREV_PROGRESS));
 
   feedbackVideo.addEventListener('click', handleToggleFeedbackVideo);
   window.addEventListener('scroll', handleShowSubHeader);

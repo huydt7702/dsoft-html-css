@@ -1,4 +1,8 @@
 @media (max-width: 991.98px) {
+  .d-none-low-992 {
+    display: none;
+  }
+
   .header {
     &__nav-list {
       display: none;
@@ -12,6 +16,15 @@
   .courses {
     &__wrap-progress {
       display: none;
+    }
+
+    &__slide-wrapper {
+      overflow: unset;
+    }
+
+    &__slide-row {
+      transform: translateX(0) !important;
+      flex-wrap: wrap;
     }
   }
 

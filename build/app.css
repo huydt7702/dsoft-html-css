@@ -452,6 +452,13 @@ button:focus {
   margin: 0;
   cursor: pointer;
 }
+.courses__slide-wrapper {
+  overflow: hidden;
+}
+.courses__slide-row {
+  flex-wrap: nowrap;
+  transition: transform ease-in-out 0.5s;
+}
 .courses__item {
   background-color: #fff;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
@@ -594,6 +601,9 @@ button:focus {
 .course--bg-gray {
   background-color: #f0eef7;
   padding-bottom: 56px;
+}
+.course--bg-gray .courses__item {
+  box-shadow: unset;
 }
 
 .feedback {
@@ -833,6 +843,9 @@ button:focus {
 }
 
 @media (max-width: 991.98px) {
+  .d-none-low-992 {
+    display: none;
+  }
   .header__nav-list {
     display: none;
   }
@@ -841,6 +854,13 @@ button:focus {
   }
   .courses__wrap-progress {
     display: none;
+  }
+  .courses__slide-wrapper {
+    overflow: unset;
+  }
+  .courses__slide-row {
+    transform: translateX(0) !important;
+    flex-wrap: wrap;
   }
   .feedback__detail {
     margin-right: 0;

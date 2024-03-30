@@ -17,6 +17,15 @@
     cursor: pointer;
   }
 
+  &__slide-wrapper {
+    overflow: hidden;
+  }
+
+  &__slide-row {
+    flex-wrap: nowrap;
+    transition: transform ease-in-out 0.5s;
+  }
+
   &__item {
     background-color: $whiteColor;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
@@ -187,4 +196,8 @@
 .course--bg-gray {
   background-color: #f0eef7;
   padding-bottom: 56px;
+
+  .courses__item {
+    box-shadow: unset;
+  }
 }
