@@ -15,6 +15,7 @@
   &__group-search {
     display: flex;
     align-items: center;
+    flex: 1;
   }
 
   &__logo-link {
@@ -35,6 +36,7 @@
 
   &__search {
     position: relative;
+    width: 100%;
   }
 
   &__search-input {
@@ -128,7 +130,7 @@
   background-color: $whiteColor;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  transition: top ease-in-out 0.2s;
+  transition: top ease-in-out 0.5s;
 
   .header__search {
     border: 1px solid #ccc;
@@ -178,6 +180,8 @@
   &-list {
     display: flex;
     gap: 28px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   &-item {

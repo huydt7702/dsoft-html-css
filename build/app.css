@@ -50,6 +50,7 @@ button:focus {
 .header__group-search {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 .header__logo-link {
   display: flex;
@@ -67,6 +68,7 @@ button:focus {
 }
 .header__search {
   position: relative;
+  width: 100%;
 }
 .header__search-input {
   padding: 12px 30px 12px 8px;
@@ -146,7 +148,7 @@ button:focus {
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  transition: top ease-in-out 0.2s;
+  transition: top ease-in-out 0.5s;
 }
 .sub-header .header__search {
   border: 1px solid #ccc;
@@ -188,6 +190,8 @@ button:focus {
 .header__nav-list {
   display: flex;
   gap: 28px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .header__nav-item {
   display: flex;
@@ -558,6 +562,8 @@ button:focus {
   width: 36px;
   height: 36px;
   border-radius: 3px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 .courses__progress-btn:hover {
   opacity: 0.7;
